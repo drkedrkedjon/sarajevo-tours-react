@@ -106,6 +106,9 @@ meter {
   --color-pink: 340, 40%, 72%;
   --color-gray: 166, 17%, 71%;
   --color-blue: 223, 78%, 68%;
+  /* Shadows */
+  --shadow-blue: 223, 33%, 39%;
+
   /* font family */
   --ff-text: "Mona Sans";
   --ff-title: "Amatic SC", cursive;
@@ -113,13 +116,35 @@ meter {
   --fs-titulo: 8rem;
   --fs-900: 6rem;
   --fs-800: 5rem;
-  --fs-700: 4rem;
+  --fs-700: 3rem;
   --fs-600: 1.563rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
   --fs-300: 0.8rem;
   --fs-200: 0.64rem;
   --fs-100: 0.512rem;
+}
+/* ************************************** */
+/* Colors */
+/* ************************************** */
+
+.color-green {
+  color: hsl(var(--color-green));
+}
+.color-orange {
+  color: hsl(var(--color-orange));
+}
+.color-pink {
+  color: hsl(var(--color-pink));
+}
+.color-gray {
+  color: hsl(var(--color-gray));
+}
+.color-blue {
+  color: hsl(var(--color-blue));
+}
+.text-shadow-blue {
+  text-shadow: 5px 5px 0px hsl(var(--shadow-blue));
 }
 
 /* ************************************** */
@@ -169,9 +194,29 @@ meter {
 .header-container {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .nav-cart {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
+}
+.nav-list {
+  display: flex;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+.nav-list > :not(:last-child) {
+  border-inline-end: 2px solid white;
+  padding-inline-end: 0.5rem;
+}
+.cart-img {
+  height: 40px;
+}
+.logo-text {
+  font-weight: 900;
+  font-stretch: 75%;
+  text-transform: capitalize;
 }
