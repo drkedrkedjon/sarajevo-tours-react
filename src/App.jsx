@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeLayout from "./pages/HomeLayout";
 import Home from "./pages/Home";
-import HomeCards from "./pages/HomeCards.jsx";
+import HomeCards from "./pages/HomeCards";
 
 function App() {
   return (
