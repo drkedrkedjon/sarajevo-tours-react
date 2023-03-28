@@ -33,5 +33,5 @@ export default function HomeCards() {
     return <CardHome key={card.imgUrl} card={{ ...card }} />;
   });
 
-  return <div>{html}</div>;
+  return <div className="home-cards-grid">{html}</div>;
 }

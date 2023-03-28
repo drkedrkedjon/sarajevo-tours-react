@@ -204,6 +204,7 @@ meter {
   background-image: url(/assets/images/bckg-blue-stars.svg);
   max-width: 1000px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 /* ************************************** */
@@ -389,6 +390,32 @@ meter {
 /* Card Home Component */
 /* ************************************** */
 
-.card-home {
-  max-width: 200px;
+.home-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.home-card-container {
+  container-type: inline-size;
+}
+.home-card-article {
+  display: grid;
+  grid-template: repeat(3, auto) / auto;
+  gap: 1rem;
+  background-color: hsl(var(--color-pink));
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0 hsl(var(--shadow-blue));
+}
+.home-card-article h3 {
+  font-size: var(--fs-700);
+  text-align: center;
+}
+.home-card-article img {
+  box-shadow: 5px 5px 0 hsl(var(--shadow-blue));
+}
+@container (min-width: 420px) {
+  .home-card-article {
+  }
 }
