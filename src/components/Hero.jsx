@@ -16,9 +16,9 @@ export default function Hero() {
         <div className="hero-select">
           <h3 className="color-white">Choose your passion:</h3>
           <div className="hero-btn-container">
-            <button className="btn">Skiing</button>
-            <button className="btn">Biking</button>
-            <button className="btn">Walking</button>
+            <button className="btn btn-green">Skiing</button>
+            <button className="btn btn-green">Biking</button>
+            <button className="btn btn-green">Walking</button>
           </div>
         </div>
       </div>

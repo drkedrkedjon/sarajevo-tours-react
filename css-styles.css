@@ -198,7 +198,19 @@ meter {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000, 4px 4px 0px hsl(var(--shadow-blue));
 }
-
+.btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 7px;
+  box-shadow: 3px 3px 0px hsl(var(--shadow-blue), 0.5);
+  font-size: var(--fs-500);
+  font-weight: 700;
+}
+.btn-green {
+  background-color: hsl(var(--color-green));
+}
+.btn-pink {
+  background-color: hsl(var(--color-pink));
+}
 /* ************************************** */
 /* Home Layout */
 /* ************************************** */
@@ -206,9 +218,11 @@ meter {
 .home-layout {
   background-color: hsl(var(--color-blue));
   background-image: url(/assets/images/bckg-blue-stars.svg);
+  background-size: cover;
   max-width: 1000px;
   margin-inline: auto;
   overflow: hidden;
+  box-shadow: 10px 10px 0 hsl(var(--shadow-blue));
 }
 .background-color-home {
   background-color: hsl(var(--color-gray));
@@ -315,7 +329,7 @@ meter {
   /* max-width: 17rem; */
   aspect-ratio: 1;
   text-align: center;
-  font-weight: 700;
+  /* font-weight: 700; */
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   transform: translate(2.5rem);
@@ -324,13 +338,6 @@ meter {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-}
-.btn {
-  background-color: hsl(var(--color-green));
-  padding: 0.8rem 1.5rem;
-  border-radius: 7px;
-  box-shadow: 3px 3px 0px hsl(var(--shadow-blue), 0.5);
-  font-size: var(--fs-500);
 }
 
 @media (min-width: 30rem) and (max-width: 41.999rem) {
@@ -421,6 +428,12 @@ meter {
   padding: 1.5rem;
   border-radius: 30px;
   box-shadow: 5px 5px 0 hsl(var(--shadow-blue));
+  transition: all 0.2s ease-out;
+}
+.home-card-article:hover {
+  transform: scale(1.03);
+  box-shadow: 7px 7px 0 hsl(var(--shadow-blue));
+  transition: all 0.2s ease-out;
 }
 .home-card-article h3 {
   font-size: 2.5rem;
@@ -474,4 +487,18 @@ meter {
   .home-card-article h3 {
     font-size: 3.5rem;
   }
+}
+/* ************************************** */
+/* Futter Component */
+/* ************************************** */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-image: url("/assets/images/bckg-footer.svg");
+  background-size: cover;
+  padding: 6rem 2rem;
+  text-align: center;
 }
