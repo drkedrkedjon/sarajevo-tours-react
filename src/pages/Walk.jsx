@@ -1,9 +1,9 @@
 import React from "react";
 import SubSelect from "../components/SubSelect";
-import { Outlet } from "react-router-dom";
 
-export default function WalkLayout() {
+export default function Walk() {
   const props = {
+    title: "Choose your curiosity:",
     to1: "food-walking",
     to2: "history-walking",
     btn1: "Food walks",
@@ -13,7 +13,6 @@ export default function WalkLayout() {
   return (
     <>
       <SubSelect dataProps={{ ...props }} />
-      <Outlet />
     </>
   );
 }

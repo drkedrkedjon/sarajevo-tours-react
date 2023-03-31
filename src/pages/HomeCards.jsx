@@ -30,7 +30,8 @@ export default function HomeCards() {
   ];
 
   const html = dataCards.map((card) => {
-    return <CardHome key={card.imgUrl} card={{ ...card }} />;
+    const { title, imgUrl, description } = card;
+    return <CardHome key={card.imgUrl} card={{ title, imgUrl, description }} />;
   });
 
   return <div className="home-cards-grid">{html}</div>;

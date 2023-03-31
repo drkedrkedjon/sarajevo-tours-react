@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from "react";
 
 export default function CardHome({ card }) {
-  const { title, imgUrl, description } = card;
+  const { title, summary, description, imgUrl } = card;
   const randomDeg = Math.random() * 10 - 5;
   return (
     <div
@@ -12,7 +13,8 @@ export default function CardHome({ card }) {
       <article className="home-card-article">
         <h3 className="ff-title color-white">{title}</h3>
         <img src={imgUrl} alt="Sasa" />
-        <p>{description}</p>
+        {description && <p>{description}</p>}
+        {summary && <p>{summary}</p>}
       </article>
     </div>
   );

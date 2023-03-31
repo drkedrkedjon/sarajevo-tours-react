@@ -1,9 +1,9 @@
 import React from "react";
 import SubSelect from "../components/SubSelect";
-import { Outlet } from "react-router-dom";
 
-export default function BikeLayout() {
+export default function Bike() {
   const props = {
+    title: "Choose the length of adventure:",
     to1: "single-day",
     to2: "multi-day",
     btn1: "Single day",
@@ -13,7 +13,6 @@ export default function BikeLayout() {
   return (
     <>
       <SubSelect dataProps={{ ...props }} />
-      <Outlet />
     </>
   );
 }

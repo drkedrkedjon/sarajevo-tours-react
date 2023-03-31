@@ -3,10 +3,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function SubSelect({ dataProps }) {
-  const { to1, to2, btn1, btn2 } = dataProps;
+  const { to1, to2, btn1, btn2, title } = dataProps;
   return (
     <div className="sub-select">
-      <h3 className="color-white">Choose your mountain:</h3>
+      <h3 className="color-white">{title}</h3>
       <div className="sub-btn-container">
         <NavLink
           to={to1}
