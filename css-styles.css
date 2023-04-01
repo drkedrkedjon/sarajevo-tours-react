@@ -197,9 +197,6 @@ body,
 #root {
   height: 100%;
 }
-.background-color-home {
-  min-height: 100%;
-}
 
 .text-stroke {
   /* Makes outline on text */
@@ -230,6 +227,11 @@ body,
 .btn-pink {
   background-color: hsl(var(--color-pink));
 }
+.underline {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid hsl(var(--color-black));
+  align-self: center;
+}
 /* ************************************** */
 /* Home Layout */
 /* ************************************** */
@@ -245,6 +247,7 @@ body,
 }
 .background-color-home {
   background-color: hsl(var(--color-gray));
+  min-height: 100%;
 }
 
 /* ************************************** */

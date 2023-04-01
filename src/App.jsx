@@ -6,18 +6,20 @@ import HomeCards from "./pages/HomeCards";
 import Ski from "./pages/Ski";
 import Bike from "./pages/Bike";
 import Walk from "./pages/Walk";
+import ProductLayout from "./pages/ProductLayout";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<HomeLayout />}>
-          <Route path="/" element={<Home />}>
+        <Route path="/" element={<HomeLayout />}>
+          <Route element={<Home />}>
             <Route index element={<HomeCards />} />
             <Route path="skiing" element={<Ski />} />
             <Route path="biking" element={<Bike />} />
             <Route path="walking" element={<Walk />} />
           </Route>
+          <Route path="products" element={<ProductLayout />} />
         </Route>
       </Routes>
     </BrowserRouter>

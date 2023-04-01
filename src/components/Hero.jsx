@@ -15,7 +15,7 @@ export default function Hero() {
           </h2>
         </div>
         <div className="hero-select">
-          <h3 className="color-white">Choose your passion:</h3>
+          <h3 className="color-white fs-500">Choose your passion:</h3>
           <div className="hero-btn-container">
             <NavLink
               to="skiing"
@@ -42,6 +42,9 @@ export default function Hero() {
               Walking
             </NavLink>
           </div>
+          <NavLink className="underline" to="/">
+            Clear selection
+          </NavLink>
         </div>
       </div>
     </div>
