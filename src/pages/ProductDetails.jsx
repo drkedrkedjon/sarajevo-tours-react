@@ -9,14 +9,26 @@ export default function ProductDetails() {
     (product) => product.id.toString() === params.id
   );
   const {
+    title,
+    subtitle,
+    description,
+    imgUrl,
+    imgUrl2,
     price,
-    hero: { title, text },
+    hero: { heroTitle, heroText },
   } = findProduct;
+  console.log(heroTitle);
 
   return (
     <>
-      <HeroProduct price={price} text={text} title={title} />
-      <h1>Product Details</h1>;
+      <HeroProduct price={price} text={heroText} title={heroTitle} />
+      <div className="details-container color-white">
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>
+        <img src={imgUrl} alt={heroText} />
+        <p>{description}</p>
+        <img src={imgUrl2} alt={heroText} />
+      </div>
     </>
   );
 }

@@ -2,10 +2,10 @@ export default [
   {
     id: "1",
     title: "Guia de pistas en Jahorina",
-    subtitle: "Guía GPS completa.Todo incluido",
+    subtitle: "Guía GPS completa. Todo incluido",
     hero: {
-      title: "Jahorina",
-      text: "Olympic mountain with 35km of ski slopes, 31.000 skiiers/h",
+      heroTitle: "Jahorina",
+      heroText: "Olympic mountain with 35km of ski slopes, 31.000 skiiers/h",
     },
     summary:
       "Hoteles, apartamentos o acogedoras casas a pie de pistas. O si tiene un automóvil, quédese en Sarajevo, ya que Jahorina está a solo 24 km de distancia. Tenemos todas las respuestas para ti mientras te preparas para unas vacaciones.",
@@ -14,15 +14,16 @@ export default [
     price: "25",
     category: "esqui",
     location: "Jahorina",
-    imgUrl: "/assets/images/bike-card.jpg",
+    imgUrl: "/assets/images/products/1-1.jpg",
+    imgUrl2: "/assets/images/products/1-2.jpg",
   },
   {
     id: "2",
     title: "Guia de alojamientos en Jahorina",
     subtitle: "Guía GPS completa.Todo incluido",
     hero: {
-      title: "Jahorina",
-      text: "Choose the best, hotel, bungalow, on slopes or down in town",
+      heroTitle: "Jahorina",
+      heroText: "Choose the best, hotel, bungalow, on slopes or down in town",
     },
     summary:
       "¿Cuál es el mejor telesquí para empezar el día (y aparcar el coche a 20 m cerca del telesilla y del quiosco de forfaits) y cómo llegar a las mejores pistas en poco tiempo disfrutando de esas primeras rondas antes de que lleguen las escuelas de esquí? ¿Qué pistas aguantan mejor si hace calor? ¿Qué hacer si hay niebla, dónde aparcar el coche... en qué pendiente ir?",

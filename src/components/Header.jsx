@@ -21,9 +21,9 @@ export default function Header({ color }) {
       </div>
       <div>
         <Link to="/">
-          <h1 className={`fs-700 logo-text ${color} text-shadow-blue`}>
+          <p className={`fs-700 logo-text ${color} text-shadow-blue`}>
             Sarajevo tours
-          </h1>
+          </p>
         </Link>
       </div>
     </div>
