@@ -12,11 +12,10 @@ export default function ProductDetails() {
     price,
     hero: { title, text },
   } = findProduct;
-  console.log(text);
 
   return (
     <>
-      <HeroProduct />
+      <HeroProduct price={price} text={text} title={title} />
       <h1>Product Details</h1>;
     </>
   );

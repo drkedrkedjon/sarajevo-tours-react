@@ -188,6 +188,7 @@ meter {
 .fs-300 {
   font-size: var(--fs-300);
 }
+
 /* ************************************** */
 /* Clases utiles */
 /* ************************************** */
@@ -231,6 +232,12 @@ body,
   /* text-decoration: underline; */
   border-bottom: 1px solid hsl(var(--color-black));
   align-self: center;
+}
+.price {
+  font-stretch: 75%;
+  font-weight: 900;
+  color: hsl(var(--color-black));
+  text-shadow: 2px 2px 0 hsl(var(--color-white));
 }
 /* ************************************** */
 /* Home Layout */
@@ -354,14 +361,20 @@ body,
   z-index: 12;
   padding: 2rem;
   margin: 1rem;
-  background-color: hsl(var(--color-pink), 0.9);
-  border: 0.8rem solid hsl(var(--color-blue));
   border-radius: 30px;
   aspect-ratio: 1;
   text-align: center;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   transform: translate(2.5rem);
+}
+.hero-select-home {
+  background-color: hsl(var(--color-pink), 0.9);
+  border: 0.8rem solid hsl(var(--color-blue));
+}
+.hero-select-product {
+  background-color: hsl(var(--color-blue), 0.9);
+  border: 0.8rem solid hsl(var(--color-pink));
 }
 .hero-btn-container {
   display: flex;
