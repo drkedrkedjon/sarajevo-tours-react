@@ -237,14 +237,23 @@ body,
 /* ************************************** */
 
 .home-layout {
-  background-color: hsl(var(--color-blue));
-  background-image: url(/assets/images/bckg-blue-stars.svg);
   background-size: cover;
   max-width: 1000px;
   margin-inline: auto;
   overflow: hidden;
   box-shadow: 10px 10px 0 hsl(var(--shadow-blue));
 }
+
+.home-layout-blue {
+  background-color: hsl(var(--color-blue));
+  background-image: url(/assets/images/bckg-blue-stars.svg);
+}
+
+.home-layout-pink {
+  background-color: hsl(var(--color-pink));
+  background-image: url(/assets/images/bckg-pink-circle.svg);
+}
+
 .background-color-home {
   background-color: hsl(var(--color-gray));
   min-height: 100%;
