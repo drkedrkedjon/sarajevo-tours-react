@@ -28,7 +28,7 @@ export default function Ski() {
 
   const html = dataFilter.map((card) => {
     const { id, title, imgUrl, summary } = card;
-    return <CardHome key={id} card={{ title, imgUrl, summary }} />;
+    return <CardHome key={id} card={{ id, title, imgUrl, summary }} />;
   });
 
   return (
