@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="hero-container">
       <div className="hero-grid">
-        <div className="hero-plate"></div>
+        <div className="hero-plate box-shadow-blue"></div>
         <div className="hero-text">
           <h2 className="ff-title color-white text-stroke">
             Best adventure gps guides in and around the city of:
