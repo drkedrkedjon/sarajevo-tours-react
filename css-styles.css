@@ -191,7 +191,9 @@ meter {
 .fs-300 {
   font-size: var(--fs-300);
 }
-
+p {
+  line-height: 1.4;
+}
 /* ************************************** */
 /* Clases utiles */
 /* ************************************** */
@@ -334,7 +336,7 @@ body,
 
 .hero-plate {
   background-color: hsl(var(--color-green));
-  box-shadow: 5px 5px 0 hsl(var(--shadow-blue));
+  box-shadow: 5px 5px 0 hsl(var(--shadow-pink));
   border-radius: 15px;
   transform: rotate(5deg);
   z-index: 10;
@@ -370,6 +372,7 @@ body,
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   transform: translate(2.5rem);
+  max-width: 25rem;
 }
 .hero-select-home {
   background-color: hsl(var(--color-pink), 0.9);
@@ -577,18 +580,97 @@ body,
 
 .details-container {
   display: grid;
-  margin: 4rem 1rem;
+  margin: 3rem 1rem;
   gap: 1rem;
 }
 .details-container h1,
-h3 {
+.details-container h3 {
   font-weight: 900;
   font-stretch: 75%;
   font-size: 3rem;
   line-height: 1;
+  text-align: right;
 }
-.details-container h3 {
+.details-container > h3 {
   font-size: 1.8rem;
+}
+.details-container img {
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 hsl(var(--shadow-pink));
+}
+.details-container > img:first-of-type {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transform: rotate(-3deg);
+  margin-block: 1rem;
+}
+.details-container > img:last-of-type {
+  transform: rotate(3deg);
+}
+@media (min-width: 42rem) and (max-width: 49.999rem) {
+  .details-container img {
+    max-height: 20rem;
+  }
+  .details-container img:last-of-type {
+    transform: translate(-30%) rotate(8deg);
+  }
+  .details-container p {
+    margin-left: 10rem;
+    text-align: right;
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .details-container {
+    grid-template: repeat(3, auto) / 30% 10% auto;
+    margin-inline: 3rem;
+    margin-block: 6rem;
+    gap: 2rem;
+  }
+  .details-container h1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  .details-container h3 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    align-self: end;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .details-container p {
+    grid-row: 3/-1;
+    grid-column: 2/-1;
+    font-size: 1.3rem;
+    text-align: right;
+    padding-inline-end: 1rem;
+  }
+  .details-container img:first-of-type {
+    grid-row: 1/3;
+    grid-column: 3/-1;
+    transform: rotate(-5deg) scale(110%) translate(3%, -5%);
+  }
+  .details-container img:last-of-type {
+    grid-row: 3/-1;
+    grid-column: 1/2;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    transform: translate(-40%) rotate(8deg) scale(120%);
+    align-self: center;
+  }
+}
+
+/* ************************************** */
+/* Banner Component */
+/* ************************************** */
+
+.banner-container {
+  background-color: rebeccapurple;
+  max-width: min(90%, 650px);
+  margin-inline: auto;
 }
 
 /* ************************************** */

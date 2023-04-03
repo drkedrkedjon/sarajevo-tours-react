@@ -17,18 +17,17 @@ export default function ProductDetails() {
     price,
     hero: { heroTitle, heroText },
   } = findProduct;
-  console.log(heroTitle);
 
   return (
     <>
       <HeroProduct price={price} text={heroText} title={heroTitle} />
-      <div className="details-container color-white">
+      <article className="details-container color-white">
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
         <img src={imgUrl} alt={heroText} />
         <p>{description}</p>
         <img src={imgUrl2} alt={heroText} />
-      </div>
+      </article>
     </>
   );
 }
