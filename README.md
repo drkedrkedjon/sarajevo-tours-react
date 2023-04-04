@@ -4,7 +4,7 @@
 
 ### CSS
 
-Use of Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip path...
+Use of Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip-path...
 
 ### React Router
 
@@ -12,7 +12,7 @@ Nested Routes, Relative Path, Outlet, Query parameters
 
 ## React
 
-Components, Props
+Components, Props, statefull form
 
 ## Firebase
 
