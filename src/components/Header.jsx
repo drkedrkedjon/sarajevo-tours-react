@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header({ color }) {
   return (
@@ -8,9 +8,42 @@ export default function Header({ color }) {
       <div className="nav-cart">
         <nav>
           <ul className="nav-list fs-500">
-            <li>About</li>
-            <li>Admin</li>
-            <li>Contact</li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-list-link nav-list-link-active"
+                    : "nav-list-link"
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-list-link nav-list-link-active"
+                    : "nav-list-link"
+                }
+                to="/admin"
+              >
+                Admin
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-list-link nav-list-link-active"
+                    : "nav-list-link"
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <img

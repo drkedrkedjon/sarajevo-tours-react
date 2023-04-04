@@ -156,7 +156,7 @@ meter {
   text-shadow: 5px 5px 0px hsl(var(--shadow-blue));
 }
 .text-shadow-pink {
-  text-shadow: 5px 5px 0px hsl(var(--shadow-pink));
+  text-shadow: 3px 3px 0px hsl(var(--shadow-pink));
 }
 .box-shadow-blue {
   box-shadow: 5px 5px 0px hsl(var(--shadow-blue));
@@ -250,6 +250,7 @@ body,
   color: hsl(var(--color-black));
   text-shadow: 2px 2px 0 hsl(var(--color-white));
 }
+
 /* ************************************** */
 /* Home Layout */
 /* ************************************** */
@@ -295,13 +296,20 @@ body,
 .nav-list {
   display: flex;
   gap: 0.5rem;
-  color: white;
-  font-weight: 600;
 }
 .nav-list > :not(:last-child) {
-  border-inline-end: 2px solid white;
+  border-inline-end: 2px solid hsl(var(--color-white));
   padding-inline-end: 0.5rem;
 }
+.nav-list-link {
+  font-weight: 600;
+  color: hsl(var(--color-white));
+}
+.nav-list-link:hover,
+.nav-list-link-active {
+  border-bottom: 4px solid hsl(var(--color-white));
+}
+
 .cart-img {
   height: 2.5rem;
 }
@@ -738,6 +746,42 @@ body,
   }
 }
 
+/* ************************************** */
+/* Contact form page */
+/* ************************************** */
+
+.form-container {
+  background-color: hsl(var(--color-orange));
+  max-width: min(90%, 700px);
+  margin: 2rem auto;
+  border-radius: 15px;
+  transform: rotate(4deg);
+  padding: 2rem;
+}
+.form-contact {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: strech;
+}
+.name-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.label-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  background-color: hsl(var(--color-white));
+  border: 1px solid hsl(var(--color-black));
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 0 hsl(var(--shadow-pink), 0.8);
+  color: hsl(var(--color-black));
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
 /* ************************************** */
 /* Futter Component */
 /* ************************************** */

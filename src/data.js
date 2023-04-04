@@ -38,6 +38,10 @@ export default [
     id: "3",
     title: "Obtener ambas guias de Jahorina con el 20% de descuento",
     subtitle: "Obtener ambos GPS. Todo incluido",
+    hero: {
+      heroTitle: "50% OFF",
+      heroText: "Choose the best, hotel, bungalow, on slopes or down in town",
+    },
     summary:
       "Obtenga ambas guías de la montaña Jahorina con un descuento especial del 25% sobre el precio total combinado",
     description: "BlaBla",
@@ -45,6 +49,7 @@ export default [
     category: "esqui",
     location: "Jahorina",
     imgUrl: "/assets/images/bike-card.jpg",
+    imgUrl2: "/assets/images/bike-card.jpg",
   },
 
   {

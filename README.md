@@ -4,11 +4,11 @@
 
 ### CSS
 
-Use of Flexbox, Grid, Container Query, Variable fonts...
+Use of Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip path...
 
 ### React Router
 
-Nested Routes, Relative Path, Outlet
+Nested Routes, Relative Path, Outlet, Query parameters
 
 ## React
 
