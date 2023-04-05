@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Button from "./Button";
 
 export default function Banner({ bannerType }) {
   // eslint-disable-next-line no-unused-vars
@@ -15,7 +16,7 @@ export default function Banner({ bannerType }) {
           className="btn-img-container"
           style={{ backgroundImage: `url(${imgUrl})` }}
         >
-          <button className="btn btn-green color-black">Add to cart</button>
+          <Button color="green" title="Add to cart" />
         </div>
       </aside>
     </div>
