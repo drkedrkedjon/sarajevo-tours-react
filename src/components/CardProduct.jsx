@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function CardHome({ card }) {
+export default function CardProduct({ card }) {
   const { id, title, summary, description, imgUrl } = card;
   const randomDeg = Math.random() * 10 - 5;
   return (

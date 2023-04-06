@@ -1,8 +1,8 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
-import CardHome from "../components/CardHome";
-import SubSelect from "../components/SubSelect";
+import CardProduct from "../components/CardProduct";
 import data from "../data";
+import SubSelect from "../components/SubSelect";
 
 export default function Ski() {
   const props = {
@@ -20,14 +20,14 @@ export default function Ski() {
   const dataFilter = data.filter((product) => {
     if (!typeFilter && product.category === "ski") {
       return product;
-    } else if (typeFilter === product.location.toLowerCase()) {
+    } else if (typeFilter === product.type) {
       return product;
     }
   });
 
   const html = dataFilter.map((card) => {
     const { id, title, imgUrl, summary } = card;
-    return <CardHome key={id} card={{ id, title, imgUrl, summary }} />;
+    return <CardProduct key={id} card={{ id, title, imgUrl, summary }} />;
   });
 
   return (

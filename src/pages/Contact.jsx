@@ -11,8 +11,6 @@ export default function Contact() {
     message: "",
   });
 
-  console.log(formData);
-
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((oldData) => {
@@ -61,7 +59,7 @@ export default function Contact() {
             <form className="form-contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <h1 className="fs-700 ff-title color-white text-shadow-pink">
-                Contact me
+                Contact
               </h1>
 
               <div className="name-email">

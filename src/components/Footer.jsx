@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../components/Button";
+import NavBtn from "../components/NavBtn";
 
 export default function Footer() {
   return (
     <div className="footer">
-      <Button color="pink" title="Admin panel" />
+      <NavBtn color="pink" title="Admin panel" pathTo="/admin" />
       <div>
         <h3 className="ff-title fs-700 color-white">
           Made in 2023 by Cubi y Boni

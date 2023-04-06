@@ -1,18 +1,40 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import SubSelect from "../components/SubSelect";
+import CardProduct from "../components/CardProduct";
+import data from "../data";
 
 export default function Bike() {
   const props = {
     title: "Choose the length of adventure:",
-    to1: "single-day",
-    to2: "multi-day",
+    to1: "single",
+    to2: "multi",
     btn1: "Single day",
     btn2: "Multi day",
   };
 
+  // eslint-disable-next-line no-unused-vars
+  const [searchParams, setSearchParams] = useSearchParams();
+  const typeFilter = searchParams.get("type");
+  console.log(typeFilter);
+
+  const dataFilter = data.filter((product) => {
+    if (!typeFilter && product.category === "bike") {
+      return product;
+    } else if (typeFilter === product.type) {
+      return product;
+    }
+  });
+
+  const html = dataFilter.map((card) => {
+    const { id, title, imgUrl, summary } = card;
+    return <CardProduct key={id} card={{ id, title, imgUrl, summary }} />;
+  });
+
   return (
     <>
       <SubSelect dataProps={{ ...props }} />
+      <div className="home-cards-grid">{html}</div>;
     </>
   );
 }

@@ -9,6 +9,7 @@ import Walk from "./pages/Walk";
 import ProductLayout from "./pages/ProductLayout";
 import ProductDetails from "./pages/ProductDetails";
 import Contact from "./pages/Contact";
+import LogIn from "./pages/LogIn";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path=":id" element={<ProductDetails />} />
         </Route>
         <Route path="contact" element={<Contact />} />
+        <Route path="admin" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   );
