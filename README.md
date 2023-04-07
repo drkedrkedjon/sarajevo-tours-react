@@ -12,7 +12,7 @@ Nested Routes, Relative Path, Outlet, Query parameters
 
 ## React
 
-Components, Props, statefull form
+Components, Props, statefull Forms
 
 ## Firebase
 
