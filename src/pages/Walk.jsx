@@ -33,7 +33,7 @@ export default function Walk() {
 
   return (
     <>
-      <SubSelect dataProps={{ ...props }} />
+      <SubSelect searchType={typeFilter} dataProps={{ ...props }} />
       <div className="home-cards-grid">{html}</div>;
     </>
   );
