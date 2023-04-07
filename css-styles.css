@@ -304,8 +304,8 @@ body,
 .hamburger {
   position: absolute;
   z-index: 101;
-  top: 2rem;
-  left: 2rem;
+  top: 0.9rem;
+  left: 0.8rem;
 }
 
 @media (max-width: 49.999rem) {
@@ -324,8 +324,10 @@ body,
     padding: 2rem;
     padding-top: 6rem;
     box-shadow: 5px 5px 0 hsl(var(--shadow-blue), 0.6);
-    /* transform: translate(-105%); */
     transition: transform 0.1s ease-out;
+  }
+  .nav-list[aria-hidden="true"] {
+    transform: translate(-105%);
   }
 }
 
@@ -362,6 +364,9 @@ body,
   .nav-list > :not(:last-child) {
     border-inline-end: 2px solid hsl(var(--color-white));
     padding-inline-end: 0.5rem;
+  }
+  .hamburger {
+    visibility: hidden;
   }
   .nav-cart {
     align-items: flex-end;

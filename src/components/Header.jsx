@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { ReactComponent as hamburgerIcon } from "../../public/assets/images/hamburger.svg";
+import { ReactComponent as HamburgerIcon } from "../assets/hamburger.svg";
 
 export default function Header({ color }) {
+  const [isOpen, setIsOpen] = useState(true);
+  function handleClick() {
+    setIsOpen((isOpen) => !isOpen);
+  }
   return (
     <div className="header-container">
       <div className="nav-cart">
         <nav>
-          <button className="hamburger">{hamburgerIcon}</button>
-          <ul className="nav-list fs-500">
+          <button onClick={handleClick} className="hamburger">
+            <HamburgerIcon />
+          </button>
+          <ul aria-hidden={isOpen} className="nav-list fs-500">
             <li>
               <NavLink
                 className={({ isActive }) =>
