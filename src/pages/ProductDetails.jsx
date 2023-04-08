@@ -29,7 +29,7 @@ export default function ProductDetails() {
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
         <img src={imgUrl} alt={heroText} />
-        <p>{description}</p>
+        <div className="parafo flow">{description}</div>
         <img src={imgUrl2} alt={heroText} />
       </article>
     </>

@@ -10,6 +10,7 @@ import ProductLayout from "./pages/ProductLayout";
 import ProductDetails from "./pages/ProductDetails";
 import Contact from "./pages/Contact";
 import LogIn from "./pages/LogIn";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </Route>
         <Route path="contact" element={<Contact />} />
         <Route path="admin" element={<LogIn />} />
+        <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

@@ -17,3 +17,5 @@ Components, Props, statefull Forms
 ## Firebase
 
 Work in progres
+
+## Netlify

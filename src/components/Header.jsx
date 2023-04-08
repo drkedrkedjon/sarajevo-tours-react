@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as HamburgerIcon } from "../assets/hamburger.svg";
+import { ReactComponent as ShoppingCart } from "../assets/shopping-cart.svg";
 
 export default function Header({ color }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -25,7 +26,7 @@ export default function Header({ color }) {
                 }
                 to="/about"
               >
-                About
+                Proyect
               </NavLink>
             </li>
             <li>
@@ -54,11 +55,7 @@ export default function Header({ color }) {
             </li>
           </ul>
         </nav>
-        <img
-          className="cart-img"
-          src="/assets/images/shopping-cart.svg"
-          alt="Red and yellow shopping cart"
-        />
+        {<ShoppingCart className="cart-img" alt="Shopping Cart in colors" />}
       </div>
       <div>
         <Link to="/">
