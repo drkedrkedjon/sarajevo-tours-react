@@ -2,9 +2,13 @@
 
 ## Practicas React 18, React router 6, Firebase auth. y Firestore database as backend
 
+### Figma
+
+Design, UI and UX. Use of Figma app for design.
+
 ### CSS
 
-Use of Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip-path...
+Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip-path...
 
 ### React Router
 
