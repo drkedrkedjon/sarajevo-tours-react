@@ -8,14 +8,24 @@ Use of Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip-p
 
 ### React Router
 
-Nested Routes, Relative Path, Outlet, Query parameters
+Nested Routes, Relative Path, Outlet, Query parameters, useLocation.
 
 ## React
 
-Components, Props, statefull Forms
+Components, Props, Conditional rendering, Statefull Forms, useEffect, useState
 
 ## Firebase
 
-Work in progres
+Work in progress
 
 ## Netlify
+
+Form submision, Redirect for pushState in react. GitHub deployment
+
+## Extras
+
+ReactMarkdown, vite-plugin-svgr
+
+## Git
+
+Commits, Branches, Merge, Restore
