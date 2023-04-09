@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function SubSelect({ searchType, dataProps }) {
   const { to1, to2, btn1, btn2, title } = dataProps;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="sub-select">
       <h3 className="color-white fs-500">{title}</h3>

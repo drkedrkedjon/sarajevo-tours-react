@@ -223,6 +223,7 @@ body,
   font-size: var(--fs-500);
   font-weight: 700;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 .btn-active {
   box-shadow: inset 3px 3px 0px hsl(var(--shadow-blue), 0.5);
@@ -309,6 +310,7 @@ body,
   z-index: 101;
   top: 0.9rem;
   left: 0.8rem;
+  cursor: pointer;
 }
 
 @media (max-width: 49.999rem) {
@@ -341,7 +343,6 @@ body,
 .nav-list-link-active {
   border-bottom: 4px solid hsl(var(--color-white));
 }
-
 .cart-img {
   height: 2.5rem;
 }

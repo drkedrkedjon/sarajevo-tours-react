@@ -19,14 +19,14 @@ export default function HomeCards() {
     },
     {
       title: "Foods & sweets walkabouts",
-      url: "/walking",
+      url: "/walking?type=food",
       imgUrl: "/assets/images/food-card.jpg",
       description:
         "Wanna taste Sarajevo? Get our tour and find what and where to eat. Prepare in advance, breakfast, lunch, dinner. And sweets.",
     },
     {
       title: "Visit all important  historic spots ",
-      url: "/walking",
+      url: "/walking?type=history",
       imgUrl: "/assets/images/history-card.jpg",
       description:
         "Do not loose time searching for important spots, get our detailed guides with GPS navigation... ",

@@ -19,7 +19,7 @@ export default function HeroProduct({ title, text, price }) {
           </h3>
           <p className="fs-700 price">{price}€</p>
           <div className="hero-btn-container">
-            <Button color="green" title="Admin panel" />
+            <Button color="green" title="Add to cart" />
           </div>
         </div>
       </div>
