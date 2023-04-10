@@ -1,13 +1,11 @@
 import React, { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-// import data from "../data";
 import HeroProduct from "../components/HeroProduct";
 import { ProductContext } from "../api/DataContext";
 
 export default function ProductDetails() {
   const data = useContext(ProductContext);
-  console.log(data);
 
   const params = useParams();
   const findProduct = data.find(

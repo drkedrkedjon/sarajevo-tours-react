@@ -17,10 +17,14 @@ const db = getFirestore(app);
 const productsRef = collection(db, "products");
 
 export async function getProducts() {
-  const querySnapshot = await getDocs(productsRef);
-  const dataArr = querySnapshot.docs.map((doc) => ({
-    ...doc.data(),
-    id: doc.id,
-  }));
-  return dataArr;
+  try {
+    const querySnapshot = await getDocs(productsRef);
+    const dataArr = querySnapshot.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+    return dataArr;
+  } catch (err) {
+    console.log(err);
+  }
 }
