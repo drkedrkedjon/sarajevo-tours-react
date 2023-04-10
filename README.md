@@ -12,15 +12,15 @@ Flexbox, Grid, Container Query, Variable fonts, Custom properties, Clip-path...
 
 ### React Router
 
-Nested Routes, Relative Path, Outlet, Query parameters, useLocation.
+Nested Routes, Relative Path, Outlet, Query parameters, useLocation,
 
 ## React
 
-Components, Props, Conditional rendering, Statefull Forms, useEffect, useState
+Components, Props, Conditional rendering, Statefull Forms, useEffect, useState, createContext
 
 ## Firebase
 
-Work in progress
+Iniciate app, getFirestore() colection(), getDocs()
 
 ## Netlify
 

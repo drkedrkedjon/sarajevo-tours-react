@@ -22,6 +22,5 @@ export async function getProducts() {
     ...doc.data(),
     id: doc.id,
   }));
-  // console.log(dataArr);
   return dataArr;
 }
