@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useSearchParams } from "react-router-dom";
 import SubSelect from "../components/SubSelect";
 import CardProduct from "../components/CardProduct";
-import data from "../data";
+import { ProductContext } from "../api/DataContext";
 
 export default function Bike() {
   const props = {
@@ -12,6 +12,9 @@ export default function Bike() {
     btn1: "Single day",
     btn2: "Multi day",
   };
+
+  const data = useContext(ProductContext);
+  console.log(data);
 
   // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();

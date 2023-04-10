@@ -1,11 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  collection,
-  query,
-  where,
-  getDocs,
-} from "firebase/firestore/lite";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCHxAlF3ScJqoNTkEl4uGF6mGpplSSChS4",
@@ -20,26 +14,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// const productsRef = collection(db, "products");
-export const skiQuery = query(
-  collection(db, "products"),
-  where("category", "==", "ski")
-);
-export const bikeQuery = query(
-  collection(db, "products"),
-  where("category", "==", "biking")
-);
-export const walkQuery = query(
-  collection(db, "products"),
-  where("category", "==", "walking")
-);
+const productsRef = collection(db, "products");
 
-export async function getProducts(query) {
-  const querySnapshot = await getDocs(query);
+export async function getProducts() {
+  const querySnapshot = await getDocs(productsRef);
   const dataArr = querySnapshot.docs.map((doc) => ({
     ...doc.data(),
     id: doc.id,
   }));
-  console.log(dataArr);
+  // console.log(dataArr);
   return dataArr;
 }

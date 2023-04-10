@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useContext, memo } from "react";
 import { useSearchParams } from "react-router-dom";
 import CardProduct from "../components/CardProduct";
-import data from "../data";
 import SubSelect from "../components/SubSelect";
+import { ProductContext } from "../api/DataContext";
 
-export default function Ski() {
+function Ski() {
   const props = {
     title: "Chose your mountain:",
     to1: "jahorina",
@@ -12,6 +12,9 @@ export default function Ski() {
     btn1: "Jahorina",
     btn2: "Bjelasnica",
   };
+
+  const data = useContext(ProductContext);
+  console.log(data);
 
   // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
@@ -37,3 +40,5 @@ export default function Ski() {
     </>
   );
 }
+
+export default memo(Ski);
