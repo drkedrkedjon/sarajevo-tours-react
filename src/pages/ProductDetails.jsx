@@ -13,18 +13,8 @@ export default function ProductDetails() {
   const findProduct = data.find(
     (product) => product.id.toString() === params.id
   );
-  const {
-    title,
-    subtitle,
-    description,
-    imgUrl,
-    imgUrl2,
-    price,
-    hero: { heroTitle, heroText },
-  } = findProduct;
 
-  const descriptionMD = description.replace(/\\n\\n/g, "\n\n");
-  console.log(descriptionMD);
+  const descriptionMD = findProduct?.description.replace(/\\n\\n/g, "\n\n");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,16 +22,20 @@ export default function ProductDetails() {
 
   return (
     <>
-      <HeroProduct price={price} text={heroText} title={heroTitle} />
+      <HeroProduct
+        price={findProduct?.price}
+        text={findProduct?.hero.heroText}
+        title={findProduct?.hero.heroTitle}
+      />
       <article className="details-container color-white">
-        <h1>{title}</h1>
-        <h3>{subtitle}</h3>
-        <img src={imgUrl} alt={heroText} />
+        <h1>{findProduct?.title}</h1>
+        <h3>{findProduct?.subtitle}</h3>
+        <img src={findProduct?.imgUrl} alt={findProduct?.hero.heroText} />
         <div className="parafo flow">
           {" "}
           <ReactMarkdown>{descriptionMD}</ReactMarkdown>
         </div>
-        <img src={imgUrl2} alt={heroText} />
+        <img src={findProduct?.imgUrl2} alt={findProduct?.hero.heroText} />
       </article>
     </>
   );
