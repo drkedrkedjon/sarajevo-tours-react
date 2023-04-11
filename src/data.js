@@ -1,112 +1,117 @@
 export default [
-  {
-    id: "1",
-    title: "Ski slopes GPS guide for Jahorina",
-    subtitle: "GPS enabled guide, all inclusive",
-    hero: {
-      heroTitle: "Jahorina",
-      heroText: "Olympic mountain with 35km of ski slopes, 31.000 skiiers/h",
-    },
-    summary:
-      "What is the best ski lift to start the day (and park the car 20 m near the chairlift and ski pass kiosk) and how to get to the best slopes in a short time enjoying those first rounds before the ski schools arrive? Which tracks hold up best if it's hot? What to do if there is fog, where to park the car... What slope to go?",
-    description: `Jahorina is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. \n\n The resort offers a variety of ski slopes for skiers of all levels. Here's a description of the ski slopes in Jahorina: \n\n Beginner slopes: Jahorina has several gentle slopes that are perfect for beginners. These slopes are located near the bottom of the mountain and are easily accessible from the base area. They offer a gentle gradient that allows beginners to practice their turns and build confidence.\n\n  Intermediate slopes: Jahorina has several intermediate slopes that are perfect for skiers who have mastered the basics and are looking to improve their skills. These slopes are located higher up the mountain and offer more challenging terrain, including steeper gradients and more moguls.\n\n  Advanced slopes: Jahorina has a few advanced slopes that are perfect for experienced skiers who are looking for a challenge. These slopes are located near the top of the mountain and offer steep gradients, tight turns, and challenging moguls. The advanced slopes in Jahorina are not as numerous as the intermediate and beginner slopes, but they provide a good challenge for advanced skiers.\n\n  Off-piste terrain: Jahorina also offers some off-piste terrain for skiers who are looking for an adventure. The resort has several areas where skiers can ski off the groomed runs and explore the natural terrain. Skiers should always exercise caution when skiing off-piste, as there may be hidden dangers such as rocks or crevasses.\n\n  Overall, Jahorina offers a good mix of ski slopes for skiers of all levels. The slopes are well-maintained and offer a variety of terrain, from gentle slopes for beginners to challenging runs for advanced skiers.`,
-    price: "25",
-    category: "ski",
-    type: "jahorina",
-    imgUrl: "/assets/images/products/1-1.jpg",
-    imgUrl2: "/assets/images/products/1-2.jpg",
-  },
-  {
-    id: "2",
-    title: "Accomodation guide for Jahorina",
-    subtitle: "Full GPS guide, all inclusive",
-    hero: {
-      heroTitle: "Jahorina",
-      heroText: "Choose what you like: hotel, bungalow, or mountain hut",
-    },
-    summary:
-      "Accommodation options in Jahorina include hotels, private apartments, hostels, and mountain huts. Hotels offer a range of amenities such as restaurants, bars, and ski-in/ski-out access. Private apartments offer more space and privacy than hotels. Hostels are a budget-friendly option for solo travelers or groups. Mountain huts offer a rustic experience for visitors who want to be closer to nature.",
-    description:
-      "Jahorina ski resort offers a variety of accommodation options for visitors, ranging from hotels to private apartments. Here's a description of the accommodation options in Jahorina: \n\n Hotels: Jahorina has several hotels located in or near the base area of the resort. These hotels offer a range of amenities, including restaurants, bars, spas, and fitness centers. Some of the hotels in Jahorina also offer ski-in/ski-out access, meaning that skiers can access the slopes directly from the hotel.\n\n  Private apartments: Jahorina also has several private apartments available for rent. These apartments range in size from small studios to large apartments that can accommodate several people. Private apartments are a good option for visitors who want more space and privacy than a hotel room can provide.\n\n  Hostels: For budget-conscious travelers, Jahorina has a few hostels located near the base area of the resort. These hostels offer shared dormitory-style rooms as well as private rooms. Hostels are a good option for solo travelers or groups who want to save money on accommodation.\n\n Mountain huts: For visitors who want a more rustic experience, Jahorina has several mountain huts located on the slopes. These huts offer basic accommodation and are often located near the top of the mountain. They are a good option for visitors who want to ski all day and spend their nights in a cozy, remote setting.\n\n  Overall, Jahorina offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, hostels, and mountain huts, depending on their needs and preferences.",
-    price: "25",
-    category: "ski",
-    type: "jahorina",
-    imgUrl: "/assets/images/bike-card.jpg",
-    imgUrl2: "/assets/images/bike-card.jpg",
-  },
-  {
-    id: "3",
-    title: "20% discount offer",
-    subtitle: "Get both Jahorina guides, the slopes and the acomodation",
-    hero: {
-      heroTitle: "20% OFF",
-      heroText: "Special offer, both Jahorina guides in one convenient pack",
-    },
-    summary:
-      "Jahorina is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
-    description:
-      "Jahorina is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains. Here's a summary of what skiing in Jahorina is like: Slopes: Jahorina has over 20 km of ski runs, including 10 km of beginner runs, 6 km of intermediate runs, and 4 km of advanced runs. The longest run is about 3.5 km. The slopes are well-groomed and maintained, and there's a good mix of terrain for skiers of all levels. Lifts: The resort has 6 chairlifts and 2 gondolas, which can transport up to 12,000 skiers per hour. The lifts are modern and efficient, and there's usually not much of a wait time to get on. Snow: Jahorina typically gets an average of 120 cm of snow each winter season, and the resort also has snow-making capabilities to ensure good skiing conditions throughout the season. Ski School: There's a ski school on-site that offers lessons for skiers of all levels, from beginners to advanced. The instructors are certified and experienced, and they speak a variety of languages. Other Activities: In addition to skiing, Jahorina offers other winter activities such as snowboarding, cross-country skiing, snowshoeing, and sledding. The resort also has several restaurants and cafes where skiers can relax and refuel.Overall, Jahorina is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
-    price: "40",
-    category: "ski",
-    type: "jahorina",
-    imgUrl: "/assets/images/bike-card.jpg",
-    imgUrl2: "/assets/images/bike-card.jpg",
-  },
+  // {
+  //   id: "1",
+  //   title: "Ski slopes GPS guide for Jahorina",
+  //   subtitle: "GPS enabled guide, all inclusive",
+  //   hero: {
+  //     heroTitle: "Jahorina",
+  //     heroText: "Olympic mountain with 35km of ski slopes, 31.000 skiiers/h",
+  //   },
+  //   summary:
+  //     "What is the best ski lift to start the day (and park the car 20 m near the chairlift and ski pass kiosk) and how to get to the best slopes in a short time enjoying those first rounds before the ski schools arrive? Which tracks hold up best if it's hot? What to do if there is fog, where to park the car... What slope to go?",
+  //   description: `Jahorina is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. \n\n The resort offers a variety of ski slopes for skiers of all levels. Here's a description of the ski slopes in Jahorina: \n\n Beginner slopes: Jahorina has several gentle slopes that are perfect for beginners. These slopes are located near the bottom of the mountain and are easily accessible from the base area. They offer a gentle gradient that allows beginners to practice their turns and build confidence.\n\n  Intermediate slopes: Jahorina has several intermediate slopes that are perfect for skiers who have mastered the basics and are looking to improve their skills. These slopes are located higher up the mountain and offer more challenging terrain, including steeper gradients and more moguls.\n\n  Advanced slopes: Jahorina has a few advanced slopes that are perfect for experienced skiers who are looking for a challenge. These slopes are located near the top of the mountain and offer steep gradients, tight turns, and challenging moguls. The advanced slopes in Jahorina are not as numerous as the intermediate and beginner slopes, but they provide a good challenge for advanced skiers.\n\n  Off-piste terrain: Jahorina also offers some off-piste terrain for skiers who are looking for an adventure. The resort has several areas where skiers can ski off the groomed runs and explore the natural terrain. Skiers should always exercise caution when skiing off-piste, as there may be hidden dangers such as rocks or crevasses.\n\n  Overall, Jahorina offers a good mix of ski slopes for skiers of all levels. The slopes are well-maintained and offer a variety of terrain, from gentle slopes for beginners to challenging runs for advanced skiers.`,
+  //   price: "25",
+  //   category: "ski",
+  //   type: "jahorina",
+  //   imgUrl: "/assets/images/products/ski/ja-pi-1.jpg",
+  //   imgUrl2: "/assets/images/products/ski/ja-pi-2.jpg",
+  // },
 
-  {
-    id: "4",
-    title: "Ski slopes GPS guide for Bjelasnica",
-    subtitle: "GPS enabled guide, all inclusive",
-    hero: {
-      heroTitle: "Bjelasnica",
-      heroText: "Olympic mountain with 20km of ski slopes.",
-    },
-    summary:
-      "Bjelasnica offers a great range of slopes for skiers of different levels, and the beautiful views of the surrounding countryside make it a popular destination for winter sports enthusiasts. The slopes are well-maintained, and the ski resort offers a range of amenities and services, including ski rentals, lessons, and accommodations.",
-    description:
-      "Bjelasnica is a mountain located near Sarajevo, Bosnia and Herzegovina, and it is also a popular ski resort with a variety of slopes for skiers of different levels. Here is a description of the ski slopes on Bjelasnica: Beginner slopes: Bjelasnica offers several easy and gentle slopes for beginners to learn and practice skiing. These slopes are located near the base area and are easily accessible. They are perfect for beginners to learn the basics and build their confidence. Intermediate slopes: Bjelasnica has several intermediate slopes that are great for skiers who have some experience but are not yet ready for advanced slopes. These slopes have steeper gradients and more challenging terrain than beginner slopes, and are great for improving skiing skills. Advanced slopes: Bjelasnica has many challenging slopes that are perfect for experienced skiers. These slopes have steep gradients, moguls, and are often ungroomed, providing a real test for advanced skiers. They are located at higher elevations and offer great views of the surrounding area. Off-piste terrain: Bjelasnica also offers some off-piste terrain for adventurous skiers who want to explore beyond the marked slopes. Skiers must take precautions when skiing off-piste as the terrain may be unpredictable and potentially hazardous. Overall, Bjelasnica offers a great range of slopes for skiers of different levels, and the beautiful views of the surrounding countryside make it a popular destination for winter sports enthusiasts. The slopes are well-maintained, and the ski resort offers a range of amenities and services, including ski rentals, lessons, and accommodations.",
-    price: "25",
-    category: "ski",
-    type: "bjelasnica",
-    imgUrl: "/assets/images/bike-card.jpg",
-    imgUrl2: "/assets/images/bike-card.jpg",
-  },
-  {
-    id: "5",
-    title: "Accomodation guide for Bjelasnica",
-    subtitle: "Full GPS guide, all inclusive",
-    hero: {
-      heroTitle: "Bjelasnica",
-      heroText: "Choose what you like: hotel, bungalow, or mountain hut",
-    },
-    summary:
-      "Bjelasnica offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, and guesthouses, depending on their needs and preferences",
-    description:
-      "Bjelasnica ski resort offers a variety of accommodation options for visitors, ranging from hotels to private apartments. Here's a description of the accommodation options in Bjelasnica: Hotels: Bjelasnica has several hotels located in or near the base area of the resort. These hotels offer a range of amenities, including restaurants, bars, spas, and fitness centers. Some of the hotels in Bjelasnica also offer ski-in/ski-out access, meaning that skiers can access the slopes directly from the hotel. Private apartments: Bjelasnica also has several private apartments available for rent. These apartments range in size from small studios to large apartments that can accommodate several people. Private apartments are a good option for visitors who want more space and privacy than a hotel room can provide. Guesthouses: For visitors who want a more authentic experience, Bjelasnica has several guesthouses located in nearby villages. These guesthouses offer traditional Bosnian hospitality and often serve homemade meals. They are a good option for visitors who want to experience the local culture and cuisine. Overall, Bjelasnica offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, and guesthouses, depending on their needs and preferences.",
-    price: "25",
-    category: "ski",
-    type: "bjelasnica",
-    imgUrl: "/assets/images/bike-card.jpg",
-    imgUrl2: "/assets/images/bike-card.jpg",
-  },
-  {
-    id: "6",
-    title: "20% discount offer",
-    subtitle: "Get both Bjelasnica guides, the slopes and the acomodation",
-    hero: {
-      heroTitle: "20% OFF",
-      heroText: "Special offer, both Bjelasnica guides in one convenient pack",
-    },
-    summary:
-      "Bjelasnica is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains.",
-    description:
-      "Bjelasnica is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains. Here's a summary of what skiing in Bjelasnica is like: Slopes: Bjelasnica has over 20 km of ski runs, including 10 km of beginner runs, 6 km of intermediate runs, and 4 km of advanced runs. The longest run is about 3.5 km. The slopes are well-groomed and maintained, and there's a good mix of terrain for skiers of all levels. Lifts: The resort has 3 chairlifts and 5 ski-lifts, which can transport up to 7,000 skiers per hour. The lifts are modern and efficient, and there's usually not much of a wait time to get on. Snow: Bjelasnica typically gets an average of 120 cm of snow each winter season, and the resort also has snow-making capabilities to ensure good skiing conditions throughout the season. Ski School: There's a ski school on-site that offers lessons for skiers of all levels, from beginners to advanced. The instructors are certified and experienced, and they speak a variety of languages. Other Activities: In addition to skiing, Bjelasnica offers other winter activities such as snowboarding, cross-country skiing, snowshoeing, and sledding. The resort also has several restaurants and cafes where skiers can relax and refuel.Overall, Bjelasnica is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
-    price: "40",
-    category: "ski",
-    type: "bjelasnica",
-    imgUrl: "/assets/images/bike-card.jpg",
-    imgUrl2: "/assets/images/bike-card.jpg",
-  },
+  // {
+  //   id: "2",
+  //   title: "Accomodation guide for Jahorina",
+  //   subtitle: "Full GPS guide, all inclusive",
+  //   hero: {
+  //     heroTitle: "Jahorina",
+  //     heroText: "Choose what you like: hotel, bungalow, or mountain hut",
+  //   },
+  //   summary:
+  //     "Accommodation options in Jahorina include hotels, private apartments, hostels, and mountain huts. Hotels offer a range of amenities such as restaurants, bars, and ski-in/ski-out access. Private apartments offer more space and privacy than hotels. Hostels are a budget-friendly option for solo travelers or groups. Mountain huts offer a rustic experience for visitors who want to be closer to nature.",
+  //   description:
+  //     "Jahorina ski resort offers a variety of accommodation options for visitors, ranging from hotels to private apartments. Here's a description of the accommodation options in Jahorina: \n\n Hotels: Jahorina has several hotels located in or near the base area of the resort. These hotels offer a range of amenities, including restaurants, bars, spas, and fitness centers. Some of the hotels in Jahorina also offer ski-in/ski-out access, meaning that skiers can access the slopes directly from the hotel.\n\n  Private apartments: Jahorina also has several private apartments available for rent. These apartments range in size from small studios to large apartments that can accommodate several people. Private apartments are a good option for visitors who want more space and privacy than a hotel room can provide.\n\n  Hostels: For budget-conscious travelers, Jahorina has a few hostels located near the base area of the resort. These hostels offer shared dormitory-style rooms as well as private rooms. Hostels are a good option for solo travelers or groups who want to save money on accommodation.\n\n Mountain huts: For visitors who want a more rustic experience, Jahorina has several mountain huts located on the slopes. These huts offer basic accommodation and are often located near the top of the mountain. They are a good option for visitors who want to ski all day and spend their nights in a cozy, remote setting.\n\n  Overall, Jahorina offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, hostels, and mountain huts, depending on their needs and preferences.",
+  //   price: "25",
+  //   category: "ski",
+  //   type: "jahorina",
+  //   imgUrl: "/assets/images/products/ski/ja-ho-1.jpg",
+  //   imgUrl2: "/assets/images/products/ski/ja-ho-2.jpg",
+  // },
+
+  // {
+  //   id: "3",
+  //   title: "20% discount offer - Jahorina",
+  //   subtitle: "Get both Jahorina guides, the slopes and the acomodation",
+  //   hero: {
+  //     heroTitle: "20% OFF",
+  //     heroText: "Special offer, both Jahorina guides in one convenient pack",
+  //   },
+  //   summary:
+  //     "Jahorina is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
+  //   description:
+  //     "Jahorina is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains. Here's a summary of what skiing in Jahorina is like:\n\n  Slopes: Jahorina has over 20 km of ski runs, including 10 km of beginner runs, 6 km of intermediate runs, and 4 km of advanced runs. The longest run is about 3.5 km. The slopes are well-groomed and maintained, and there's a good mix of terrain for skiers of all levels.\n\n  Lifts: The resort has 6 chairlifts and 2 gondolas, which can transport up to 12,000 skiers per hour. The lifts are modern and efficient, and there's usually not much of a wait time to get on.\n\n  Snow: Jahorina typically gets an average of 120 cm of snow each winter season, and the resort also has snow-making capabilities to ensure good skiing conditions throughout the season.\n\n  Ski School: There's a ski school on-site that offers lessons for skiers of all levels, from beginners to advanced. The instructors are certified and experienced, and they speak a variety of languages.\n\n  Other Activities: In addition to skiing, Jahorina offers other winter activities such as snowboarding, cross-country skiing, snowshoeing, and sledding. The resort also has several restaurants and cafes where skiers can relax and refuel. \n\n Overall, Jahorina is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
+  //   price: "40",
+  //   category: "ski",
+  //   type: "jahorina",
+  //   imgUrl: "/assets/images/products/ski/ja-pi-1.jpg",
+  //   imgUrl2: "/assets/images/products/ski/ja-ho-3.jpg",
+  // },
+
+  // {
+  //   id: "4",
+  //   title: "Ski slopes GPS guide for Bjelasnica",
+  //   subtitle: "GPS enabled guide, all inclusive",
+  //   hero: {
+  //     heroTitle: "Bjelasnica",
+  //     heroText: "Olympic mountain with 20km of ski slopes.",
+  //   },
+  //   summary:
+  //     "Bjelasnica offers a great range of slopes for skiers of different levels, and the beautiful views of the surrounding countryside make it a popular destination for winter sports enthusiasts. The slopes are well-maintained, and the ski resort offers a range of amenities and services, including ski rentals, lessons, and accommodations.",
+  //   description:
+  //     "Bjelasnica is a mountain located near Sarajevo, Bosnia and Herzegovina, and it is also a popular ski resort with a variety of slopes for skiers of different levels. Here is a description of the ski slopes on Bjelasnica: \n\n Beginner slopes: Bjelasnica offers several easy and gentle slopes for beginners to learn and practice skiing. These slopes are located near the base area and are easily accessible. They are perfect for beginners to learn the basics and build their confidence. \n\n Intermediate slopes: Bjelasnica has several intermediate slopes that are great for skiers who have some experience but are not yet ready for advanced slopes. These slopes have steeper gradients and more challenging terrain than beginner slopes, and are great for improving skiing skills. \n\n Advanced slopes: Bjelasnica has many challenging slopes that are perfect for experienced skiers. These slopes have steep gradients, moguls, and are often ungroomed, providing a real test for advanced skiers. They are located at higher elevations and offer great views of the surrounding area. \n\n Off-piste terrain: Bjelasnica also offers some off-piste terrain for adventurous skiers who want to explore beyond the marked slopes. Skiers must take precautions when skiing off-piste as the terrain may be unpredictable and potentially hazardous. \n\n Overall, Bjelasnica offers a great range of slopes for skiers of different levels, and the beautiful views of the surrounding countryside make it a popular destination for winter sports enthusiasts. The slopes are well-maintained, and the ski resort offers a range of amenities and services, including ski rentals, lessons, and accommodations.",
+  //   price: "25",
+  //   category: "ski",
+  //   type: "bjelasnica",
+  //   imgUrl: "/assets/images/products/ski/bj-pi-1.jpg",
+  //   imgUrl2: "/assets/images/products/ski/bj-pi-2.jpg",
+  // },
+
+  // {
+  //   id: "5",
+  //   title: "Accomodation guide for Bjelasnica",
+  //   subtitle: "Full GPS guide, all inclusive",
+  //   hero: {
+  //     heroTitle: "Bjelasnica",
+  //     heroText: "Choose what you like: hotel, bungalow, or mountain hut",
+  //   },
+  //   summary:
+  //     "Bjelasnica offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, and guesthouses, depending on their needs and preferences",
+  //   description:
+  //     "Bjelasnica ski resort offers a variety of accommodation options for visitors, ranging from hotels to private apartments. Here's a description of the accommodation options in Bjelasnica: \n\n Hotels: Bjelasnica has several hotels located in or near the base area of the resort. These hotels offer a range of amenities, including restaurants, bars, spas, and fitness centers. Some of the hotels in Bjelasnica also offer ski-in/ski-out access, meaning that skiers can access the slopes directly from the hotel.\n\n Private apartments: Bjelasnica also has several private apartments available for rent. These apartments range in size from small studios to large apartments that can accommodate several people. Private apartments are a good option for visitors who want more space and privacy than a hotel room can provide.\n\n Guesthouses: For visitors who want a more authentic experience, Bjelasnica has several guesthouses located in nearby villages. These guesthouses offer traditional Bosnian hospitality and often serve homemade meals. They are a good option for visitors who want to experience the local culture and cuisine.\n\n Overall, Bjelasnica offers a variety of accommodation options to suit every budget and preference. Visitors can choose from hotels, private apartments, and guesthouses, depending on their needs and preferences.",
+  //   price: "25",
+  //   category: "ski",
+  //   type: "bjelasnica",
+  //   imgUrl: "/assets/images/products/ski/bj-ho-1.jpg",
+  //   imgUrl2: "/assets/images/products/ski/bj-ho-2.jpg",
+  // },
+
+  // {
+  //   id: "6",
+  //   title: "20% discount offer - Bjelasnica",
+  //   subtitle: "Get both Bjelasnica guides, the slopes and the acomodation",
+  //   hero: {
+  //     heroTitle: "20% OFF",
+  //     heroText: "Special offer, both Bjelasnica guides in one convenient pack",
+  //   },
+  //   summary:
+  //     "Bjelasnica is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains.",
+  //   description:
+  //     "Bjelasnica is a popular ski resort located in Bosnia and Herzegovina, about 30 km from the capital city of Sarajevo. The resort is known for its excellent skiing conditions and scenic views of the surrounding mountains. Here's a summary of what skiing in Bjelasnica is like: \n\n Slopes: Bjelasnica has over 20 km of ski runs, including 10 km of beginner runs, 6 km of intermediate runs, and 4 km of advanced runs. The longest run is about 3.5 km. The slopes are well-groomed and maintained, and there's a good mix of terrain for skiers of all levels. Lifts: The resort has 3 chairlifts and 5 ski-lifts, which can transport up to 7,000 skiers per hour. The lifts are modern and efficient, and there's usually not much of a wait time to get on. Snow: Bjelasnica typically gets an average of 120 cm of snow each winter season, and the resort also has snow-making capabilities to ensure good skiing conditions throughout the season. Ski School: There's a ski school on-site that offers lessons for skiers of all levels, from beginners to advanced. The instructors are certified and experienced, and they speak a variety of languages. Other Activities: In addition to skiing, Bjelasnica offers other winter activities such as snowboarding, cross-country skiing, snowshoeing, and sledding. The resort also has several restaurants and cafes where skiers can relax and refuel.Overall, Bjelasnica is a great destination for skiing in Bosnia and Herzegovina. Its well-maintained slopes, modern lifts, and stunning views make it a popular choice for skiers of all levels.",
+  //   price: "40",
+  //   category: "ski",
+  //   type: "bjelasnica",
+  //   imgUrl: "/assets/images/products/ski/bj-pi-2.jpg",
+  //   imgUrl2: "/assets/images/products/ski/bj-ho-2.jpg",
+  // },
+  // *******************
   {
     id: "10",
     title: "MTB on Jahorina",
@@ -161,6 +166,7 @@ export default [
     imgUrl: "/assets/images/bike-card.jpg",
     imgUrl2: "/assets/images/bike-card.jpg",
   },
+  // *******************
   {
     id: "20",
     title: "Eastern route cuisine in Sarajevo",
