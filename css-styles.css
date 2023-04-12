@@ -665,6 +665,11 @@ body,
 .details-container > img:last-of-type {
   transform: rotate(3deg);
 }
+
+.return-cat-link {
+  font-weight: 600;
+}
+
 @media (min-width: 42rem) and (max-width: 49.999rem) {
   .details-container img {
     max-height: 20rem;
