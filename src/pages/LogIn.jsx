@@ -8,6 +8,7 @@ import Button from "../components/Button";
 
 export default function LogIn() {
   const navigate = useNavigate();
+  const [problemMessage, setProblemMessage] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -24,17 +25,11 @@ export default function LogIn() {
   function handleOnSubmit(e) {
     e.preventDefault();
     signInWithEmailAndPassword(auth, formData.email, formData.password)
-      .then((response) => {
-        sessionStorage.setItem(
-          "Auth-Token",
-          response._tokenResponse.refreshToken
-        );
-        navigate("/admin");
-      })
+      .then(() => navigate("/admin"))
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        console.log(errorMessage);
+        setProblemMessage("User not found or password is incorect...");
       });
 
     setFormData({
@@ -56,6 +51,7 @@ export default function LogIn() {
             <h1 className="fs-700 ff-title color-white text-shadow-pink">
               Admin log-in
             </h1>
+            {problemMessage && <p>{problemMessage}</p>}
 
             <div className="name-email">
               <div className="label-container">
