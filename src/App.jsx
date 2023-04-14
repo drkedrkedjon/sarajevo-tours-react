@@ -13,6 +13,9 @@ import LogIn from "./pages/LogIn";
 import About from "./pages/About";
 import AuthRequired from "./pages/admin/AuthRequired";
 import AdminLayout from "./pages/admin/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
+import Products from "./pages/admin/Products";
+import Income from "./pages/admin/Income";
 
 function App() {
   return (
@@ -30,7 +33,11 @@ function App() {
         <Route path="contact" element={<Contact />} />
 
         <Route element={<AuthRequired />}>
-          <Route path="admin" element={<AdminLayout />} />
+          <Route path="admin" element={<AdminLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="products" element={<Products />} />
+            <Route path="income" element={<Income />} />
+          </Route>
         </Route>
         <Route path="login" element={<LogIn />} />
 

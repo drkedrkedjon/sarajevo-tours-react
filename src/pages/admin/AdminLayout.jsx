@@ -1,7 +1,7 @@
 import React from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "../../api/firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 
 export default function AdminLayout() {
   const navigate = useNavigate();
@@ -9,7 +9,6 @@ export default function AdminLayout() {
   function handleLogOut() {
     signOut(auth)
       .then(() => {
-        sessionStorage.removeItem("Auth-Token");
         navigate("/");
       })
       .catch((error) => {
@@ -18,11 +17,59 @@ export default function AdminLayout() {
   }
 
   return (
-    <>
-      <h1>Top Secret !!!</h1>;
-      <button onClick={handleLogOut} className="btn btn-green">
-        Log out
-      </button>
-    </>
+    <div className="background-color-home sasa">
+      <div className="home-layout">
+        <header className="admin-header">
+          <Link className="underline fs-500" to={"/"}>
+            {"<< Home"}
+          </Link>
+          <button onClick={handleLogOut} className="btn btn-blue">
+            Log out
+          </button>
+        </header>
+        <nav>
+          <ul className="admin-nav">
+            <li>
+              <NavLink
+                to={"."}
+                end
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-admin-link nav-admin-link-active"
+                    : "nav-admin-link"
+                }
+              >
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"products"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-admin-link nav-admin-link-active"
+                    : "nav-admin-link"
+                }
+              >
+                Products
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"income"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-admin-link nav-admin-link-active"
+                    : "nav-admin-link"
+                }
+              >
+                Income
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+        <Outlet />
+      </div>
+    </div>
   );
 }

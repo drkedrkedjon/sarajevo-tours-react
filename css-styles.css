@@ -1051,6 +1051,39 @@ h1 {
 }
 
 /* ************************************** */
+/* Admin Secction */
+/* ************************************** */
+
+.admin-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1rem;
+  margin-block: 2rem;
+}
+
+.nav-admin-link {
+  font-weight: 600;
+  color: hsl(var(--color-black));
+}
+.nav-admin-link:hover,
+.nav-admin-link-active {
+  border-bottom: 4px solid hsl(var(--color-black));
+}
+.admin-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-block-end: 2rem;
+}
+.admin-nav > :not(:last-child) {
+  border-inline-end: 2px solid hsl(var(--color-black));
+  padding-inline-end: 0.5rem;
+}
+
+/* ************************************** */
 /* Futter Component */
 /* ************************************** */
 
