@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import Button from "../components/Button";
+import ButtonCart from "../components/ButtonCart";
 
-export default function HeroProduct({ title, text, price }) {
+export default function HeroProduct({ title, text, price, id }) {
   return (
     <div className="hero-container">
       <div className="hero-grid">
@@ -19,7 +19,7 @@ export default function HeroProduct({ title, text, price }) {
           </h3>
           <p className="fs-700 price">{price}€</p>
           <div className="hero-btn-container">
-            <Button color="green" title="Add to cart" />
+            <ButtonCart id={id} color="green" title="Add to cart" />
           </div>
         </div>
       </div>

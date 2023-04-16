@@ -55,7 +55,9 @@ export default function Header({ color }) {
             </li>
           </ul>
         </nav>
-        {<ShoppingCart className="cart-img" alt="Shopping Cart in colors" />}
+        <Link to={"/cart"}>
+          {<ShoppingCart className="cart-img" alt="Shopping Cart in colors" />}
+        </Link>
       </div>
       <div>
         <Link to="/">

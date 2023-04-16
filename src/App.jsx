@@ -16,6 +16,7 @@ import AdminLayout from "./pages/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import Products from "./pages/admin/Products";
 import Income from "./pages/admin/Income";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           </Route>
         </Route>
         <Route path="login" element={<LogIn />} />
-
+        <Route path="cart" element={<Cart />} />
         <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
