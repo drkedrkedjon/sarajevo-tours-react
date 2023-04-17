@@ -7,6 +7,7 @@ export function ShopCartContext({ children }) {
   const [shopCart, setShopCart] = useState([
     "E4Tk1dnWSnooj5W04y5X",
     "8pvJ4Uno2LA6LvL9Jrwf",
+    "JOdPWQ8fNTvQWzqZrnJ3",
   ]);
 
   return (

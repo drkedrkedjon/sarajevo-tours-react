@@ -312,7 +312,26 @@ body,
   left: 0.8rem;
   cursor: pointer;
 }
-
+.cart-img-container {
+  position: relative;
+}
+.cart-img-numero {
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  background-color: red;
+  color: hsl(var(--color-white));
+  font-size: var(--fs-200);
+  min-width: 15px;
+  min-height: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  font-weight: 700;
+}
 @media (max-width: 49.999rem) {
   .nav-list {
     display: flex;
@@ -1151,31 +1170,92 @@ h1 {
 /* ************************************** */
 
 .cart-container {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(var(--color-white));
   margin: 1rem;
   padding: 1rem;
   border-radius: 15px;
 }
 .cart-list {
-  border-block: 1px solid hsl(var(--color-black));
+  border-block: 4px solid hsl(var(--color-black));
   margin-block: 1rem;
+}
+.cart-list > :not(:last-child) {
+  border-block-end: 1px solid hsl(var(--color-black));
 }
 .cart-list-item {
   display: flex;
   justify-content: space-between;
-  padding-block: 0.5rem;
+  gap: 2rem;
+  align-items: center;
+  padding-block: 0.3rem;
 }
+
 .title-summary h3 {
   font-size: var(--fs-500);
   font-weight: 500;
+  font-stretch: 85%;
 }
 .title-summary p {
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
+  font-stretch: 85%;
+}
+.cart-price-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.cart-small-btn {
+  font-size: var(--fs-200);
+  font-weight: 900;
+  align-self: center;
+  padding: 1px;
+  cursor: pointer;
+}
+.cart-sb-red {
+  border: 1px solid red;
+  color: red;
+}
+
+.cart-sb-green {
+  border: 1px solid green;
+  color: green;
 }
 .cart-price {
   font-size: var(--fs-600);
   font-weight: 800;
   font-stretch: 75%;
+}
+.cart-input {
+  border: 1px solid hsl(var(--color-black), 0.5);
+  font-size: var(--fs-300);
+  border-radius: 3px;
+  padding: 0.2rem;
+  text-align: right;
+}
+.cart-input::placeholder {
+  color: hsl(var(--color-black), 0.3);
+}
+.cart-total {
+  border-block-start: 10px solid hsl(var(--color-orange));
+  margin-block-start: 1rem;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-size: var(--fs-600);
+}
+.cart-container > button {
+  align-self: center;
+  margin-block-start: 0.5rem;
+}
+@media (min-width: 50rem) {
+  .cart-container {
+    margin-inline: 6rem;
+    padding: 2rem;
+  }
+  .cart-container > button {
+    margin-block-start: 2rem;
+    align-self: end;
+  }
 }
 /* ************************************** */
 /* Futter Component */
