@@ -4,11 +4,9 @@ import React, { createContext, useState } from "react";
 export const ShoppingContext = createContext();
 
 export function ShopCartContext({ children }) {
-  const [shopCart, setShopCart] = useState([
-    "E4Tk1dnWSnooj5W04y5X",
-    "8pvJ4Uno2LA6LvL9Jrwf",
-    "JOdPWQ8fNTvQWzqZrnJ3",
-  ]);
+  const [shopCart, setShopCart] = useState(
+    JSON.parse(localStorage.getItem("sarajevoToursCart")) || []
+  );
 
   return (
     <ShoppingContext.Provider value={[shopCart, setShopCart]}>

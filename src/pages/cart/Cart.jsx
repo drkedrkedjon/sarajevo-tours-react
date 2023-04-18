@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { ShoppingContext } from "../../api/ShopCartContext";
 import { ProductContext } from "../../api/DataContext";
 
@@ -63,6 +63,13 @@ export default function Cart() {
     setPromoCode(inputPromoRef.current.value);
   }
 
+  // Handle disabled state of NEXT page button and save shopCart in localStorage
+  const [isDisabled, setIsDisabled] = useState(true);
+  useEffect(() => {
+    setIsDisabled(shopCart.length === 0);
+    localStorage.setItem("sarajevoToursCart", JSON.stringify(shopCart));
+  }, [shopCart]);
+
   return (
     <div className="cart-container box-shadow-blue">
       <h2 className="ff-title color-black fs-700">Shopping cart</h2>
@@ -103,7 +110,11 @@ export default function Cart() {
           <p>{formatter.format(total)}</p>
         </li>
       </ol>
-      <Button color="green" title="To payment..." />
+      <Button
+        isBtnDisabled={isDisabled}
+        color="green"
+        title={isDisabled ? "Cart is empty" : "To payment..."}
+      />
     </div>
   );
 }

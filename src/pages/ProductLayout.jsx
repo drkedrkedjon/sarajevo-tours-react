@@ -14,7 +14,7 @@ export default function ProductLayout() {
           bannerType={{
             color: "blue",
             title: "50% Discount",
-            productId: "superOffer50",
+            productId: "yx6S5Xh1Z4ylEIDPWDpD",
             description:
               "ALL the GPS enabled ski guides. The accommodations, the slopes, two mountains COMBO, Jahorina & Bjelasnica!",
             imgUrl: "/assets/images/ski-card.jpg",

@@ -16,7 +16,7 @@ export default function Banner({ bannerType }) {
           className="btn-img-container"
           style={{ backgroundImage: `url(${imgUrl})` }}
         >
-          <ButtonCart color="green" title="Add to cart" />
+          <ButtonCart id={productId} color="green" title="Add to cart" />
         </div>
       </aside>
     </div>

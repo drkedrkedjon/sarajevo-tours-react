@@ -9,8 +9,10 @@ export default function Button({ color, title, id }) {
   );
 
   function handleShopCart(prodID) {
-    setShopCart((oldCart) => [...oldCart, prodID]);
+    const newCart = [...shopCart, prodID];
+    setShopCart(newCart);
     setIsDisabled(true);
+    localStorage.setItem("sarajevoToursCart", JSON.stringify(newCart));
   }
 
   return (
