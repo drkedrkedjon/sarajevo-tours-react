@@ -16,11 +16,11 @@ Nested Routes, Relative Path, Outlet, Query parameters, useLocation,
 
 ## React
 
-Components, Props, Conditional rendering, Statefull Forms, useEffect, useState, createContext
+Components, Props, Conditional rendering, Statefull Forms, useEffect, useState, createContext, useRef
 
 ## Firebase
 
-Iniciate app, getFirestore() colection(), getDocs()
+Iniciate app, getFirestore() colection(), getDocs(). Authenticacion, onAuthStateChanged, signInWithEmailAndPassword etc...
 
 ## Netlify
 
