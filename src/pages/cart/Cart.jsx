@@ -3,6 +3,7 @@ import { ShoppingContext } from "../../api/ShopCartContext";
 import { ProductContext } from "../../api/DataContext";
 
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const [shopCart, setShopCart] = useContext(ShoppingContext);
@@ -110,11 +111,13 @@ export default function Cart() {
           <p>{formatter.format(total)}</p>
         </li>
       </ol>
-      <Button
-        isBtnDisabled={isDisabled}
-        color="green"
-        title={isDisabled ? "Cart is empty" : "To payment..."}
-      />
+      <Link className="payment-btn" to={"payment"}>
+        <Button
+          isBtnDisabled={isDisabled}
+          color="green"
+          title={isDisabled ? "Cart is empty" : "To payment..."}
+        />
+      </Link>
     </div>
   );
 }

@@ -12,68 +12,222 @@ export default function LogIn() {
         <div className="form-container box-shadow-blue">
           <div className="form-contact">
             <h1 className="fs-700 ff-title color-white text-shadow-pink">
-              About this proyect, Stack, Chalenges & Solutions
+              Details about this proyect, tech stack, chalenges & solutions.
+              Link to my portfolio. Looking for a junior employment oportunity.
             </h1>
           </div>
         </div>
         <article className="about-container color-white">
-          <h1>Learning React & Firebase</h1>
-          <h3>React 18, React router 6, CSS, HTML, Netlify.</h3>
+          <h1>Web site app of fake GPS tourist guides online shop.</h1>
+          <h3>
+            Practicas React 18, React router 6, Firebase auth. y Firestore
+            database as backend.
+          </h3>
           <div className="about-card">
             <CardHomePage
               card={{
                 url: "https://bubulazy.com",
                 title: "Visit My Portfolio",
                 summary:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod.",
+                  "If you are interested to learn more about me and check my other projects and perhaps get in touch so we can make it work for both, feel free to check now. Looking for a junior employment oportunity. Thank you in advance.",
                 imgUrl: "/assets/images/retrato-sasa.png",
               }}
             />
           </div>
           <div className="parafo flow">
+            <h4>Workplace</h4>
+
+            <p>Visual Studio Code. Vite with EsLint & Prettier plugins.</p>
+
+            <h4>Figma</h4>
+            <p>Design, UI and UX.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-              eget mauris pharetra et ultrices neque ornare aenean euismod.
-              Malesuada fames ac turpis egestas sed tempus urna et. Habitasse
-              platea dictumst quisque sagittis purus sit. Et leo duis ut diam
-              quam nulla porttitor massa. Rhoncus dolor purus non enim praesent
-              elementum facilisis. Fringilla est ullamcorper eget nulla
-              facilisi. Tempus imperdiet nulla malesuada pellentesque elit eget
-              gravida cum sociis. Consectetur adipiscing elit duis tristique
-              sollicitudin nibh sit.
+              I have used Figma app to lay down graphic design and basic UX/UI
+              functionality. You can see original design file in new tab{" "}
+              <a
+                href="https://www.figma.com/file/9a4MCgZuUR64tJ5AY8h1sR/Seher-Tours?node-id=0%3A1&t=CB0DYD4pkOpOJ0Lk-1"
+                target="blank"
+              >
+                if you click here
+              </a>
+            </p>
+
+            <h4>CSS</h4>
+            <p>
+              Flexbox, Grid, Container Query, Variable fonts, Custom properties,
+              Clip-path...
             </p>
             <p>
-              Pulvinar etiam non quam lacus suspendisse faucibus interdum
-              posuere. Est sit amet facilisis magna etiam tempor orci eu. Id
-              faucibus nisl tincidunt eget nullam non nisi. Eget nulla facilisi
-              etiam dignissim diam quis. In mollis nunc sed id. Magnis dis
-              parturient montes nascetur. Nunc scelerisque viverra mauris in
-              aliquam sem. Vestibulum rhoncus est pellentesque elit ullamcorper
-              dignissim cras tincidunt. Luctus venenatis lectus magna fringilla
-              urna.
+              Transforming design into real web app was done using modern CSS
+              properties. For Layout I've used flexbox and grid and also the new
+              container query api that was really fun to learn and use. Some
+              experimentation with clip-path and variable fonts. Custom
+              properties as must and many other...
+            </p>
+
+            <h4>React Router</h4>
+            <p>
+              Nested Routes, Relative Path, Outlet, Query parameters,
+              useLocation, useNavigate...
             </p>
             <p>
-              Lectus urna duis convallis convallis tellus. Nulla facilisi nullam
-              vehicula ipsum a arcu cursus vitae. Pretium lectus quam id leo.
-              Malesuada nunc vel risus commodo. Eget magna fermentum iaculis eu
-              non diam. Mattis vulputate enim nulla aliquet porttitor lacus
-              luctus accumsan tortor. Vitae nunc sed velit dignissim sodales ut
-              eu. Libero nunc consequat interdum varius sit amet mattis.
-              Fringilla urna porttitor rhoncus dolor purus non enim praesent..
+              Use of react routes for all navigation in app. Relative routes,
+              nested routes, loading nested routes in outlet by default using
+              index. Query parameters for filtering data, useLocation for
+              catching route. Link, NavLink components for links. isActive on
+              NavLinks. useNavigate for redirection if user is not
+              authenticated, etc...
+            </p>
+
+            <h4>React</h4>
+            <p>
+              Components, Props, Conditional rendering, Stateful Forms,
+              useEffect, useState, createContext, useRef...
             </p>
             <p>
-              Posuere urna nec tincidunt praesent semper feugiat nibh sed.
-              Consequat semper viverra nam libero justo laoreet sit amet cursus.
-              Risus ultricies tristique nulla aliquet enim tortor at auctor
-              urna. Viverra ipsum nunc aliquet bibendum enim facilisis gravida
-              neque
+              React components, passing props to components. Some of them like
+              Button were reusable. Use of conditional rendering in many places.
+              Stateful forms with two way directional form control via value &
+              onChange. useEffect for network query and some other
+              opportunities. useState, useRef. React context in two places, one
+              for holding data and second for shopping cart.
             </p>
+
+            <h4>Firebase</h4>
+            <p>
+              Iniciate app, getFirestore() colection(), getDocs().
+              Authenticacion, onAuthStateChanged, signInWithEmailAndPassword
+              etc...
+            </p>
+            <p>
+              Firebase Firestore connection. Initiate app, get data form
+              collection. Since the data set is very small and I was learning to
+              filter data in router anyway I am loading everything at once and
+              in one react context. For sure in more serious app the data will
+              be downloaded from firebase as needed by filtering in getDocs().
+              Authentication, sign in with email and password and
+              onAuthStateChanged listener to let logged user enter in protected
+              area (routes). Login and logoff.
+            </p>
+
+            <h4>Netlify</h4>
+            <p>
+              Form submission, Redirect for pushState in react. GitHub
+              deployment
+            </p>
+            <p>
+              Connection of my react controlled form to Netlify forms for
+              processing, Redirect rules for solving problem with pushState in
+              react. Continuous deployment via GitHub
+            </p>
+
+            <h4>Extras</h4>
+            <p>ReactMarkdown, vite-plugin-svgr</p>
+            <p>
+              Use of two extras, Reach Markdown for processing markdown as
+              string, and other for importing svg files in vite.
+            </p>
+
+            <h4>Git</h4>
+            <p>Commits, Branches, Merge, Restore, push</p>
           </div>
-          <img src="/assets/images/products/1-2.jpg" alt="sdasdasd" />
+          <img src="/assets/images/products/ski/ja-pi-2.jpg" alt="sdasdasd" />
         </article>
         <Footer />
       </div>
     </div>
   );
+}
+
+{
+  /* <h3>Workplace</h3>
+
+<p>Visual Studio Code. Vite with EsLint & Prettier plugins.</p>
+
+<h4>Figma</h4>
+<p>Design, UI and UX.</p>
+<p>
+  I have used Figma app to lay down graphic design and basic UX/UI
+  functionality. You can see original design file [ by clicking
+  here...](https://www.figma.com/file/9a4MCgZuUR64tJ5AY8h1sR/Seher-Tours?node-id=0%3A1&t=CB0DYD4pkOpOJ0Lk-1)
+</p>
+
+<h4>CSS</h4>
+<p>
+  Flexbox, Grid, Container Query, Variable fonts, Custom properties,
+  Clip-path...
+</p>
+<p>
+  Transforming design into real web app was done using modern CSS
+  properties. For Layout I've used flexbox and grid and also the new
+  container query api that was really fun to learn and use. Some
+  experimentation with clip-path and variable fonts. Custom
+  properties as must and many other...
+</p>
+
+<h4>React Router</h4>
+<p>
+  Nested Routes, Relative Path, Outlet, Query parameters,
+  useLocation, useNavigate...
+</p>
+<p>
+  Use of react routes for all navigation in app. Relative routes,
+  nested routes, loading nested routes in outlet by default using
+  index. Query parameters for filtering data, useLocation for
+  catching route. Link, NavLink components for links. isActive on
+  NavLinks. useNavigate for redirection if user is not
+  authenticated, etc...
+</p>
+
+<h4>React</h4>
+<p>
+  Components, Props, Conditional rendering, Stateful Forms,
+  useEffect, useState, createContext, useRef...
+</p>
+<p>
+  React components, passing props to components. Some of them like
+  Button were reusable. Use of conditional rendering in many places.
+  Stateful forms with two way directional form control via value &
+  onChange. useEffect for network query and some other
+  opportunities. useState, useRef. React context in two places, one
+  for holding data and second for shopping cart.
+</p>
+
+<h4>Firebase</h4>
+<p>
+  Iniciate app, getFirestore() colection(), getDocs().
+  Authenticacion, onAuthStateChanged, signInWithEmailAndPassword
+  etc...
+</p>
+<p>
+  Firebase Firestore connection. Initiate app, get data form
+  collection. Since the data set is very small and I was learning to
+  filter data in router anyway I am loading everything at once and
+  in one react context. For sure in more serious app the data will
+  be downloaded from firebase as needed by filtering in getDocs().
+  Authentication, sign in with email and password and
+  onAuthStateChanged listener to let logged user enter in protected
+  area (routes). Login and logoff.
+</p>
+
+<h4>Netlify</h4>
+<p>
+  Form submission, Redirect for pushState in react. GitHub
+  deployment
+</p>
+<p>
+  Connection of my react controlled form to Netlify forms for
+  processing, Redirect rules for solving problem with pushState in
+  react. Continuous deployment via GitHub
+</p>
+
+<h4>Extras</h4>
+<p>ReactMarkdown, vite-plugin-svgr</p>
+<p>
+  Use of two extras, Reach Markdown for processing markdown as
+  string, and other for importing svg files in vite.
+</p>
+
+<h4>Git</h4>
+<p>Commits, Branches, Merge, Restore, push</p> */
 }

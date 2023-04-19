@@ -37,7 +37,7 @@ export default function Header({ color }) {
                 }
                 to="/about"
               >
-                Proyect
+                About
               </NavLink>
             </li>
             <li>
@@ -49,7 +49,7 @@ export default function Header({ color }) {
                 }
                 to="/admin"
               >
-                Admin
+                Login
               </NavLink>
             </li>
             <li>

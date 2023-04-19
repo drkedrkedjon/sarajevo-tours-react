@@ -30,6 +30,3 @@ export default function Hero() {
     </div>
   );
 }
-
-// className={`${({ isActive }) =>
-//   isActive ? "btn-active" : ""} btn btn-green`}
