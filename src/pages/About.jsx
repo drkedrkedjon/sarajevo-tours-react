@@ -13,7 +13,8 @@ export default function LogIn() {
           <div className="form-contact">
             <h1 className="fs-700 ff-title color-white text-shadow-pink">
               Details about this proyect, tech stack, chalenges & solutions.
-              Link to my portfolio. Looking for a junior employment oportunity.
+              <br />
+              Link to my portfolio.
             </h1>
           </div>
         </div>

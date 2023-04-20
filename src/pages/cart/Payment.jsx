@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ShoppingContext } from "../../api/ShopCartContext";
 
 export default function Payment() {
+  const [, setShopCart] = useContext(ShoppingContext);
   const navegate = useNavigate();
   useEffect(() => {
+    setShopCart([]);
     setTimeout(() => {
       navegate("/about");
     }, 10000);
