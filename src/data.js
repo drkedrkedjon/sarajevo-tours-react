@@ -237,3 +237,4 @@ export default [
   //   imgUrl2: "/assets/images/products/walk/history-2.jpg",
   // },
 ];
+
