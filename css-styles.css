@@ -250,6 +250,7 @@ button[disabled] {
   box-shadow: inset 3px 3px 0px hsl(var(--shadow-blue), 0.5);
   background-color: hsl(var(--color-gray));
 }
+
 .underline {
   /* text-decoration: underline; */
   border-bottom: 1px solid hsl(var(--color-black));
